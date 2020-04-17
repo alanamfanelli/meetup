@@ -74,7 +74,7 @@ function getAccessToken() {
         const code = searchParams.get('code');
 
         if (!code) {
-            window.location.href = 'https://secure.meetup.com/oauth2/authorize?client_id=vlh4hrhpv8ngmmj81lvt5m5jsd&response_type=code&redirect_uri=https://guennithegun.github.io/meetup/';
+            window.location.href = 'https://secure.meetup.com/oauth2/authorize?client_id=vlh4hrhpv8ngmmj81lvt5m5jsd&response_type=code&redirect_uri=https://alanamfanelli.github.io/meetup/';
             return null;
         }
 
