@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import EventDetails from '../components/EventDetails';
+
 
 
 class Event extends Component {

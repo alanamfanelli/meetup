@@ -1,5 +1,5 @@
 import React from 'react';
-import { mount } from 'enzyme';
+import { shallow, mount } from 'enzyme';
 import App from '../App';
 import { loadFeature, defineFeature } from 'jest-cucumber';
 import { mockEvents } from '../components/mock-events';
