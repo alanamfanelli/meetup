@@ -2036,6 +2036,11 @@ asynckit@^0.4.0:
   resolved "https://registry.yarnpkg.com/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
   integrity sha1-x57Zf380y48robyXkLzDZkdLS3k=
 
+atatus-js@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/atatus-js/-/atatus-js-4.2.0.tgz#f4e74473e501872ddd1260881216bf5daed1fcd2"
+  integrity sha512-txZ9jVBu0l0Lx5PYwEBdNh6zfNpMcweQHEvnoC4vW28Nl0iREHrais4Ox3wVf3JW9TPltJPsNR+zvi8Nadd7CQ==
+
 atob@^2.1.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
