@@ -11,4 +11,5 @@ ReactDOM.render(<App />, document.getElementById('root'));
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
-atatus.config('e3fb8c88ef0a41cc96d270181eebfdba').install();
+atatus.config('d1b033f181d340acb2c3876ab440d92a').install();
+atatus.notify(new Error('Test Atatus Setup'));
