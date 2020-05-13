@@ -72,7 +72,6 @@ async function getEvents(lat, lon, page) {
         }
 
         return events;
-        return events;
     }
 
 };
