@@ -32,15 +32,19 @@ class App extends Component {
 
   updateEvents = (lat, lon, page) => {
     if (lat && lon) {
-      getEvents(lat, lon, this.state.page).then(response => this.setState({ events: response, lat, lon }));
+      getEvents(lat, lon, this.state.page).then(response =>
+        this.setState({ events: response, lat, lon })
+      );
+    } else if (page) {
+      getEvents(this.state.lat, this.state.lon, page).then(response =>
+        this.setState({ events: response, page })
+      );
+    } else {
+      getEvents(this.state.lat, this.state.lon, this.state.page).then(
+        response => this.setState({ events: response })
+      );
     }
-    else if (page) {
-      getEvents(this.state.lat, this.state.lon, page).then(response => this.setState({ events: response, page }));
-    }
-    else {
-      getEvents(this.state.lat, this.state.lon, this.state.page).then(response => this.setState({ events: response }));
-    }
-  }
+  };
 
   countEventsOnADate = date => {
     let count = 0;
@@ -70,7 +74,12 @@ class App extends Component {
     return (
       <div className="App">
         <CitySearch updateEvents={this.updateEvents} />
-        <NumberOfEvents updateEvents={this.updateEvents} numberOfEvents={this.state.events.length} lat={this.state.lat} lon={this.state.lon} />
+        <NumberOfEvents
+          updateEvents={this.updateEvents}
+          numberOfEvents={this.state.events.length}
+          lat={this.state.lat}
+          lon={this.state.lon}
+        />
 
         <ResponsiveContainer height={400}>
           <ScatterChart
