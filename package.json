@@ -6,7 +6,7 @@
   "dependencies": {
     "@testing-library/jest-dom": "^5.5.0",
     "atatus-js": "^4.2.0",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
     "moment": "^2.26.0",
